@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaelik — Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./index.html">KAELIK<span>.</span></a>
+  <nav><a href="#about">About</a><a href="#work">Projects</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-topline"><span>KAELIK GRAPHICS</span><span>INDEPENDENT DESIGN STUDIO</span></div>
+  <div class="hero-heading">
+    <p class="hero-prompt">Do you need a</p>
+    <h1>designer<span>?</span></h1>
+  </div>
+  <ul class="service-list" aria-label="Design services">
+    <li><span>Graphic</span><strong>Design</strong></li>
+    <li><span>Logo</span><strong>Design</strong></li>
+    <li><span>Brand</span><strong>Design</strong></li>
+    <li><span>UI/UX</span><strong>Design</strong></li>
+  </ul>
+  <a class="hero-work-link" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+</section>
+
+<section id="about" class="about-section">
+  <p class="eyebrow">About</p>
+  <h2>Kaelik Graphics is a creative space built by Douglas to turn ideas into meaningful visual experiences.</h2>
+  <p>We explore the intersection of creativity, design, and storytelling to create visuals that communicate, inspire, and leave a lasting impression.</p>
+  <p>From <strong>branding and visual identity to posters, social media designs, digital artwork, and creative campaigns</strong>, Kaelik Graphics is where ideas take shape and creativity has room to grow.</p>
+  <p>Our approach is simple: <strong>think creatively, design intentionally, and create boldly.</strong></p>
+  <p><strong>Kaelik Graphics — A creative space by Douglas, where ideas become visual.</strong></p>
+</section>
+
+<section id="work" class="work-section portfolio">
+  <header class="portfolio-header">
+    <div>
+      <p class="eyebrow">Kaelik Graphics</p>
+      <h2>Selected <span>Works</span></h2>
+    </div>
+    <p class="intro">A collection of visual identities, digital artwork, campaigns and creative design.</p>
+  </header>
+  <div id="projects" class="projects projects-grid project-grid"><p class="muted">Loading projects…</p></div>
+</section>
+
+<section id="reviews" class="reviews-section" aria-label="Client reviews">
+  <div class="review-hearts" aria-hidden="true">
+    <span class="heart heart-1">♥</span>
+    <span class="heart heart-2">♥</span>
+    <span class="heart heart-3">♥</span>
+    <span class="heart heart-4">♥</span>
+    <span class="heart heart-5">♥</span>
+    <span class="heart heart-6">♥</span>
+    <span class="heart heart-7">♥</span>
+  </div>
+  <div class="reviews-heading">
+    <span>What</span>
+    <strong>Our</strong>
+    <strong>Client Says</strong>
+  </div>
+  <div id="publicReviews" class="public-reviews" aria-live="polite"><p class="reviews-empty">Client reviews will appear here.</p></div>
+</section>
+
+<section id="contact" class="contact-section">
+  <p class="eyebrow">Start a project</p>
+  <h2>Have an idea?<br>Let's make it real.</h2>
+  <div class="contact-actions">
+    <a class="button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=creativekaelik%40gmail.com" target="_blank" rel="noopener noreferrer">Email ↗</a>
+    <a class="button whatsapp-button" href="https://wa.me/254710735051" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+  </div>
+</section>
+</main>
+<footer>© <span id="year"></span> KAELIK. All rights reserved. <span>Website built by Kaelik Graphics.</span></footer>
+<div id="projectGallery" class="gallery-dialog" role="dialog" aria-modal="true" aria-labelledby="galleryTitle" aria-describedby="galleryDescription" hidden>
+  <div class="gallery-content modal-content">
+    <button id="closeGallery" class="gallery-close" type="button" aria-label="Close project gallery">×</button>
+    <div class="modal-header">
+      <div>
+        <span id="galleryCategory"></span>
+        <h2 id="galleryTitle"></h2>
+      </div>
+      <span id="imageCounter" class="image-counter"></span>
+    </div>
+    <div id="galleryView" class="gallery-view">
+      <img id="galleryMainImage" alt="">
+      <button id="galleryPrevious" class="gallery-btn gallery-prev" type="button" aria-label="Previous image">←</button>
+      <button id="galleryNext" class="gallery-btn gallery-next" type="button" aria-label="Next image">→</button>
+    </div>
+    <p id="galleryDescription" class="modal-description"></p>
+    <div id="galleryThumbnails" class="gallery-thumbnails" aria-label="Project image thumbnails"></div>
+  </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
